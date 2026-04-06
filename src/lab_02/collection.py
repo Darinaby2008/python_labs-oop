@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from model import Book
 
 class Library:
