@@ -91,6 +91,3 @@ class Book:
         return (self._title == other._title and
                 self._author == other._author and
                 self._year == other._year)
-        
-#object = Book("title", "author", 2012, -3)
-#print(object)
