@@ -121,4 +121,4 @@
 
 * Все операции не изменяют исходную коллекцию, а создают новые.
 
-<img width="721" height="193" alt="image" src="https://github.com/user-attachments/assets/b3e8a47a-756f-4685-b53d-4e7298d691dd" />
+
