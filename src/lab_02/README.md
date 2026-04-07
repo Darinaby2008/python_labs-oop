@@ -78,7 +78,6 @@
 * Выводится количество книг (len(lib)), а затем цикл for book in lib печатает каждую книгу (используется __str__ из класса Book).
 
 ### Сценарий 2: Защита от дубликатов
-<img width="685" height="155" alt="image" src="https://github.com/user-attachments/assets/bf89842c-71fb-4891-9099-db26f238db75" />
 * Попытка добавить книгу «Война и мир» с теми же автором и годом.
 
 * Срабатывает проверка дублирования, выбрасывается ValueError с сообщением, что книга уже есть в библиотеке.
@@ -86,7 +85,7 @@
 * Демонстрируется надёжность контейнера.
 
 ### Сценарий 3: Поиск книг по автору и названию
-<img width="829" height="207" alt="image" src="https://github.com/user-attachments/assets/bbbc262e-8400-4b3d-97e2-c105c60f88c3" />
+<img width="685" height="155" alt="image" src="https://github.com/user-attachments/assets/bf89842c-71fb-4891-9099-db26f238db75" />
 * Поиск по автору «Толстой» возвращает книги «Война и мир» и «Анна Каренина».
 
 * Поиск по названию, содержащему «Маргарита», находит «Мастер и Маргариту».
@@ -94,7 +93,8 @@
 * Регистронезависимость поиска показана (например, «толстой» тоже найдёт).
 
 ### Сценарий 4: Индексация и удаление по индексу
-<img width="818" height="135" alt="image" src="https://github.com/user-attachments/assets/5f9a1251-b3c5-4aa1-a8e6-202f2809853e" />
+<img width="829" height="207" alt="image" src="https://github.com/user-attachments/assets/bbbc262e-8400-4b3d-97e2-c105c60f88c3" />
+
 * Доступ к первой книге через lib[0] и к последней через lib[-1].
 
 * Удаление книги с индексом 2 («Анна Каренина») через remove_at(2).
@@ -102,7 +102,7 @@
 * После удаления коллекция уменьшается, итерация показывает оставшиеся книги.
 
 ### Сценарий 5: Сортировка книг по году издания
-<img width="736" height="326" alt="image" src="https://github.com/user-attachments/assets/a5eeb845-b2eb-40f3-8c56-5b7e4e97ff66" />
+<img width="818" height="135" alt="image" src="https://github.com/user-attachments/assets/5f9a1251-b3c5-4aa1-a8e6-202f2809853e" />
 * Исходный порядок книг произвольный.
 
 * Вызов lib.sort(key=lambda b: b.year) упорядочивает книги от старых к новым (1866, 1869, 1967).
@@ -110,7 +110,7 @@
 * Вывод после сортировки демонстрирует правильную последовательность.
 
 ### Сценарий 6: Логические операции – выдача книг и фильтрация по статусу
-<img width="721" height="193" alt="image" src="https://github.com/user-attachments/assets/b3e8a47a-756f-4685-b53d-4e7298d691dd" />
+<img width="736" height="326" alt="image" src="https://github.com/user-attachments/assets/a5eeb845-b2eb-40f3-8c56-5b7e4e97ff66" />
 * Книга «Преступление и наказание» выдаётся (issue()).
 
 * Метод get_available() возвращает новую коллекцию только с доступными книгами (без выданной).
@@ -121,3 +121,4 @@
 
 * Все операции не изменяют исходную коллекцию, а создают новые.
 
+<img width="721" height="193" alt="image" src="https://github.com/user-attachments/assets/b3e8a47a-756f-4685-b53d-4e7298d691dd" />
