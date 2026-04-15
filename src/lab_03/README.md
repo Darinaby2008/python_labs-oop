@@ -66,7 +66,7 @@
 Создаются `PrintedBook`, `Ebook`, `AudioBook` и добавляются в `Library`. Вывод содержимого коллекции показывает, что каждый объект использует свой `__str__`.
 
 ### Сценарий 2: Полиморфный вызов метода `get_reading_time()`
-<img width="1144" height="273" alt="image" src="https://github.com/user-attachments/assets/93bf8d91-bc36-4311-9ddc-669d0108f139" />
+<img width="428" height="139" alt="image" src="https://github.com/user-attachments/assets/b6ce6da0-63c1-482f-a996-9cead37a0d1b" />
 
 Цикл проходит по коллекции и вызывает `book.get_reading_time()`. Для печатной книги возвращается `2600` мин, для электронной – `600` мин, для аудиокниги – `720` мин. Один и тот же вызов даёт разные результаты – это полиморфизм.
 
