@@ -2,7 +2,6 @@ from base import Book
 from models import PrintedBook, Ebook, AudioBook
 from collection import Library
 
-
 print("=== Лабораторная работа №3: Наследование и иерархия классов ===\n")
 
 # ----- Сценарий 1: создание объектов разных типов -----
