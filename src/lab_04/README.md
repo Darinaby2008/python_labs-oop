@@ -51,39 +51,39 @@
 Демонстрационный скрипт показывает все ключевые возможности интерфейсов.
 
 ### Сценарий 1: Создание объектов и вывод через `Printable`
-![Сценарий 1](images/lab04/scenario1.png)
+<img width="1107" height="152" alt="image" src="https://github.com/user-attachments/assets/733bca62-5107-4472-b2b2-5aa57fc37a2a" />
 
 - Создаются объекты `PrintedBook`, `Ebook`, `AudioBook`.
 - Универсальная функция `print_all(items)` принимает любую коллекцию объектов, реализующих `Printable`, и вызывает у каждого `to_string()`.
 - Вывод показывает разные строковые представления для разных типов книг.
 
 ### Сценарий 2: Проверка `isinstance` и множественная реализация интерфейсов
-![Сценарий 2](images/lab04/scenario2.png)
+
 
 - Для каждой книги проверяется, реализует ли она интерфейсы `Printable` и `Comparable`.
 - Все книги проходят обе проверки (т.к. наследуют от `Book`).
 
 ### Сценарий 3: Сравнение через интерфейс `Comparable`
-![Сценарий 3](images/lab04/scenario3.png)
+<img width="659" height="70" alt="image" src="https://github.com/user-attachments/assets/b0ed98cf-41b4-4362-bfe6-03e56f429afd" />
 
 - Вызывается метод `compare_to()` для пары книг.
 - Результат – разница годов (например, 1869–1866 = 3), что позволяет определить, какая книга новее.
 
 ### Сценарий 4: Универсальная сортировка через `Comparable`
-![Сценарий 4](images/lab04/scenario4.png)
+<img width="633" height="163" alt="image" src="https://github.com/user-attachments/assets/09dfddbc-34cd-4533-8563-97a75f4b1152" />
 
 - Функция `sort_by_comparable(items)` сортирует список любых объектов, реализующих `Comparable`, используя только метод `compare_to()`.
 - Сортировка работает без знания конкретных типов книг.
 
 ### Сценарий 5: Фильтрация коллекции по интерфейсу
-![Сценарий 5](images/lab04/scenario5.png)
+<img width="1168" height="357" alt="image" src="https://github.com/user-attachments/assets/aca443e9-03e8-4b4c-90ec-435c0398d8ab" />
 
 - Класс `Library` дополнен методами `get_printable()` и `get_comparable()`.
 - Они возвращают новую коллекцию, содержащую только объекты, поддерживающие соответствующий интерфейс (в нашем случае – все книги).
 - Выводится количество и содержимое отфильтрованных коллекций.
 
 ### Сценарий 6: Полиморфизм через интерфейс (без `if isinstance`)
-![Сценарий 6](images/lab04/scenario6.png)
+<img width="1138" height="140" alt="image" src="https://github.com/user-attachments/assets/02ba9789-1036-4f68-b519-4f512257679e" />
 
 - Создаётся список объектов разных типов.
 - В цикле вызывается `obj.to_string()` без проверки типа.
