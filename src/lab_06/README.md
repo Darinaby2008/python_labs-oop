@@ -29,14 +29,17 @@
 
 ### Сценарий 1: `TypedCollection[D]` с разными книгами
 <img width="988" height="208" alt="image" src="https://github.com/user-attachments/assets/12a164ce-c9a3-42b4-8ac0-be80255aa6fe" />
+
 Создаётся коллекция, ограниченная протоколом `Displayable`. В неё добавляются `PrintedBook`, `AudioBook`, `Ebook` – все они имеют метод `display()`. Для каждого объекта вызывается `display()`, выводятся строки с деталями.
 
 ### Сценарий 2: `TypedCollection[S]` (Scorable)
 <img width="1019" height="139" alt="image" src="https://github.com/user-attachments/assets/bd5612e6-58e8-4f3c-82df-9aa6ccd25d6f" />
+
 Коллекция, ограниченная протоколом `Scorable`. Добавлены две книги. Для каждой выводится `score()` – вычисленный рейтинг.
 
 ### Сценарий 3: `find`, `filter`, `map` на обычной коллекции `TypedCollection[Book]`
 <img width="1341" height="478" alt="image" src="https://github.com/user-attachments/assets/0b38b27c-fef6-4f78-80d7-db859777b6e7" />
+
 - `find` – находит книгу по названию или возвращает `None`.
 - `filter` – отбирает книги по условию (год > 1900).
 - `map` – демонстрирует смену типа результата: список названий (`list[str]`), список годов (`list[int]`), список рейтингов (`list[float]`).
